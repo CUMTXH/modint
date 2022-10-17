@@ -4,7 +4,7 @@ using namespace std;
 const ll mod = 998244353;
 const ll maxn = 6e6 + 7;
 struct modint{
-	int x;
+	ll x;
 	modint(int o=0){x=o;}
 	modint &operator = (int o){return x=o,*this;}
 	modint &operator +=(modint o){return x=x+o.x>=mod?x+o.x-mod:x+o.x,*this;}
